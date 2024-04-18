@@ -55,3 +55,43 @@
     }
   }
   
+
+  /* Anmation slider index.html */
+
+  .slider-div{
+    position: relative;
+    width: 500%;
+    animation: animate 10s linear infinite;
+}
+
+  @keyframes animate {
+    0%
+    {
+      left:0;
+    }
+    16%
+    {
+      left:0;
+    }
+    32%
+    {
+      left:-100%;
+    }
+    48%
+    {
+      left:-100%;
+    }
+    64%
+    {
+      left:-200%;
+    }
+    80%
+    {
+      left:-200%;
+    }
+    100%
+    {
+      left:0%;
+    }
+  
+  }
