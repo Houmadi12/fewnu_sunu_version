@@ -7,8 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 #whatsapp{
 position: fixed;
 margin-top: 60vh;
@@ -24,224 +22,6 @@ cursor: pointer;
 #whatsapp i{
 font-size: 30px;
 }
-
-/* VOICI MON DEUXIEME HEADER  */
-
-#header1{
-overflow: hidden;
-position: fixed;
-z-index: 3000;
-}
-
-#nav{
-width: 100vw;
-height: 4.6vh;
-background-color:#F5F5F5;
-display: flex;
-overflow: hidden;
-align-items: center;
-justify-content: space-between;
-padding: 20px 30px;
-}
-
-
-.nav-part1{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 40px;
-}
-
-#items{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-}
-#items i{
-color: rgba(11, 202, 212, 1);
-}
-
-#items p{
-cursor: pointer;
-margin-left: 10px;
-}
-
-#items p:hover{
-letter-spacing: 1.5px;
-}
-.nav-part2{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
-}
-.nav-part2 #icons{
-margin-left: 1.6vw;
-gap: 10px;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-}
-
-.nav-part3{
-display: flex;
-justify-content: baseline;
-gap: 10px;
-}
-/* .nav-part3 img{
-margin-left: 10%;
-}
-.nav-part3 p{
-margin-left: -20%;
-}
-.nav-part3 i{
-margin-left: -23%;
-} */
-
-#items p,.nav-part2 p,.nav-part3 p{
-font-size: 15px;
-color: #212529;
-}
-
-
-
-/* VOICI MON DEUXIEME HEADER  */
-#header {
-height: 90px;
-background-color: #242424;
-padding: 20px 30px;
-z-index: 4000;
-position: fixed;
-margin-top: 2rem;
-width: 100%;
-}
-.menu-wrap {
-display: flex;
-justify-content: space-between;
-padding: 0 15px;
-}
-.logo-img {
-height: 60px;
-}
-.menu-icon {
-font-size: 2.4em;
-color: #ffffff;
-line-height: 50px;
-}
-nav {
-position: absolute;
-background-color: #242424;
-top:70px;
-left:0;
-width: 100%;
-}
-nav ul {
-list-style-type: none;
-max-height: 0px;
-overflow: hidden;
-transition: all 0.5s;
-}
-nav ul li {
-padding: 0 15px;
-}
-nav ul li a {
-display: inline-block;
-padding: 12px;
-/* Add your custom styles below to change appearance of links */
-color: #DAE1E7;
-text-decoration: none;
-letter-spacing: 0.05em;
-}
-#lien:hover, #lien:focus {
-color: white;
-background-color: #3D4852;
-}
-
-#lien{
-color: #22292F;
-}
-
-#checkbox {
-display: none;
-}
-#checkbox:checked ~ nav ul {
-max-height: 200px;
-padding: 15px 0;
-transition: all 0.5s;
-}
-
-
-
-.submenu{
-display: flex;
-flex-direction: column;
-margin-top: 40px;
-position: absolute;
-margin-left: -18px;
-}
-
-#submenu{
-background-color:#FFFFFF;
-padding-bottom: 7%;
-border-radius: 5px;
-display: none;
-}
-
-/* CSS existant */
-/* Cache le sous-menu par défaut */
-.submenu {
-display: none;
-}
-
-#menu-html .submenu {
-display: none;
-opacity: 0;
-transform: translateY(-10px);
-transition: opacity 2s ease, transform 2s ease; /* Ajout de la transition */
-}
-
-
-
-
-/* CSS pour afficher le sous-menu lorsqu'on survole le parent */
-#menu-html:hover .submenu {
-display: flex;
-flex-direction: column;
-margin-top: 40px;
-position: absolute;
-margin-left: -18px;
-opacity: 1;
-line-height: 2px;
-transform: translateY(0);
-}
-
-
-
-#temoignage p{
-padding: 5px 0;
-color: #212529;
-font-size: 18px;
-font-weight: bold;
-}
-#temoignage{
-background-color: #F2F2F2;
-}
-
-#after{
-content: "";
-position: relative;
-width: 80px;
-height: 5px;
-background-color: #05505468;
-}
-
-/* #page1{
-background-color: aqua;
-height: 100vh;
-} */
-
-
-
 
 /* VOICI LE CSS POUR NOTRE FOOTER */
 
@@ -432,11 +212,21 @@ padding: 30px 0px;
 color: white;
 
 }
-
-
+.div-video1 iframe{
+    width: 250px;
+    height: 200px;
+}
+.div-video{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.div-video2{
+    width: 250px;
 }
 
 
+}
 @media (min-width: 768px) {
 .menu-icon {
     display: none;
@@ -457,38 +247,23 @@ nav ul li {
 }
 
 }
-
-/* h1{
-font-size: 2.2em;
-text-align: center;
-padding: 60px 40px 30px;
-color: #3D4852;
-line-height: 1.2;
-}
-p{
-line-height: 1.6;
-font-size: 1.2em;
-padding: 0 40px;
-text-align: center;
-color: #3D4852;
-} */
-
-/* voici le corps du sujet */
 /* parti1 */
-.main1{
+.div-main1{
 color: #fff;
-background-image: url(budjetphoto/bg-budget.png);
-background-size: 100%;
-height: 47rem;
+background-image: url(../images/bg-budget.png);
+background-size: cover;
+object-fit: cover;
+width: 100%;
+/* height: 47rem; */
 padding: 5%;
 font-size: 50px;
 }
 .div2{
-/* padding: 5%; */
+padding: 5%;
 margin-top: 40px;
 margin-left: -40px;
 font-weight: 400;
-/* font-size: 20px; */
+font-size: 20px;
 }
 .deux{
 font-size: 25px;
@@ -509,18 +284,17 @@ font-size: 18px;
 margin-top: 10px;
 border-radius: 20px;
 }
-.presa{
+.presaa{
 color: rgba(11, 202, 212, 1);
 background-color: #fff;
-padding: px;
 border-radius: 40px;
-width: 30%;
+width: 37%;
 font-size: 23px;
 display: flex;
 align-items: center;
 }
 .presa1{
-padding: 20px;
+padding: 10px;
 border-radius: 55px;
 background-color: rgba(0, 83, 104, 1);
 z-index: 5
@@ -533,23 +307,19 @@ padding: 5%;
 background-color: #F5F5F5;
 }
 .woman{
-width: 15%;
+width: 35%;
 }
 .droite{
-border: 1px solid #fff;
-background-color: #fff;
-width: 40%;
-height: 430px;
+    position: relative;
 }
 .gauche{
 line-height: 40px;
 }
-.play{
-margin-top: -38%;
-margin-left: 37%;
-}
+
 .player{
-width: 18%;
+position: absolute;
+left: 45%;
+transform: translateY(-9rem);
 }
 .bou{
 background-color:#F5F5F5 ;
@@ -589,12 +359,12 @@ align-items: center;
 flex-wrap: nowrap;
 line-height: 40px;
 }
-.inscri{
+.inscriv{
 color: rgba(4, 115, 133, 1);
 background-color: white;
 border-radius: 25px;
 padding: 10px;
-width: 70%;
+width: 30%;
 margin-left: -1%;
 margin-top: 50px;
 font-size: 18px;
@@ -602,7 +372,6 @@ font-size: 18px;
 .ecrit{
 font-size: 20px;
 padding: 12px;
-/* line-height: 30px; */
 }
 /* parti4 */
 .cinq{
@@ -622,30 +391,37 @@ background-color: #dcf0f1;
 width: 6%;
 margin-top: 9px;
 }
-.exep{
+.exepp{
 display: flex;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
 padding: 5%;
-text-align: center;
+text-align: center; 
 font-size: 22px;
 }
 /* parti5 */
-.div7{
+.div-div7{
 background-color: #F5F5F5;
 padding: 5%;
 display: flex;
+justify-content: space-around;
+}
+.main6{
+    background-color: #F5F5F5;
 }
 .cote1{
 line-height: 40px;
 font-size: 20px;
 }
+
+
 .but{
+
 color: #fff;
 background-color: #12cdd7;
 width: 200px;
 border-radius: 15px;
-padding: 20px;
+padding: 17px;
 
 }
 .bute{
@@ -658,34 +434,30 @@ width: 9%;
 margin-top: 9px;
 }
 /* parti5 */
-video{
-width: 50%;
+.div-video{
+    display: flex;
+    margin: 10%;
 }
-.video{
-height: 400px;
-width: 90%;
+
+.div-backraound-span{
+    display: flex;
+    background-color: #e2e3e4;
+    border-radius: 5%;
+    margin-left: -10px;
+    padding: 0;
 }
-.vi{
-height: 100px;
-width: 100%;
-display: flex;
+.div-video2{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    overflow-y: scroll;
+    width: 500px;
+    overflow-x: hidden;
 }
-.main7{
-padding: 5%;
+.div-span-video{
+    display: flex;
+    align-items: center;
 }
-.div8{
-display: grid;
-grid-template-columns: 2fr 1fr;
-padding: 6%;
-cursor: pointer;
-}
-.video1{
-width: 100%;
-height: 400px;
-overflow-y: scroll;
-background-color: #d000;
-}
-/* parti6 */
 .main8{
 background-color:rgb(251, 248, 248) ;
 padding: 5%;
@@ -696,22 +468,23 @@ align-items: center;
 gap: 10px;
 }
 .choix {
-margin-left: 100px;
+margin-left: -50px;
 }
 .forfait1{
-/* border: 1px solid #fff; */
 width: 25%;
+}
+.div{
+    display: flex;
+    gap: 10PX;
 }
 .essait{
 border-bottom: 1px solid rgba(0, 0, 0, 1.175);
 background-color: rgba(238, 238, 238, 1);
-padding: 10%;
-text-align: center;
 font-weight: bold;
 }
 .essait2{
 border-bottom: 1px solid rgba(0, 0, 0, 1.175);
-padding: 9%;
+padding: 3%; 
 text-align: center;
 color: #fff;
 background-color: #005368 ;
@@ -719,15 +492,14 @@ background-color: #005368 ;
 .essait1{
 box-shadow:  0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 background-color: rgba(248, 248, 248, 1);
-padding: 15%;
 }
-.bleu{
-font-size: 18px;
+.bll{
+font-size: 15px;
 font-weight: 700;
-width: 100%;
+width: 59%;
 color: white;
 background-color: rgb(8, 208, 218);
-padding: 4%;
+padding: 6%;
 border-radius: 5px;
 margin: auto;
 }
@@ -745,9 +517,7 @@ body{
 #header{
     margin: 0;
 }
-/* *{
-    border: 1px solid red;
-} */
+
 /* premier parti */
 .main1{
     color: #fff;
@@ -760,14 +530,22 @@ body{
 .deux{
     font-size: 15px;
     margin-left: 40px;
+    margin: 5%;
 }
-.presa{
+.ppp{
+    display: none;
+}
+.presaa{
     width: 100%;
     margin-top: 10px;
 }
-button{
-    margin-left: -10px;
-    width: 55%;
+.image-download{
+    width: 20%;
+    margin-left: 6%;
+    
+}
+.larg{
+    width: 60%;
 }
 /* deuxieme parti */
 .div4{
@@ -788,22 +566,23 @@ button{
 .phone > img{
     width: 100%;
 }
-.inscri{
-    width: 60%;
+.inscriv{
+    width: 40%;
 }
 /* quatrieme partie */
-.exep{
+.exepp{
     display: flex;
     flex-direction: column;
 }
 .bute{
-    margin: 0%;
+    transform: translateX(7rem);
+    width: 60%;
 }
 .but{
-    width: 80%;
+    width: 10%;
 }
 /* cinquieme partie */
-.div7{
+.div-div7{
     display: flex;
     flex-direction: column;
 }
@@ -817,14 +596,16 @@ button{
     gap: 50px;
     font-size: 15px;
 }
+
 /* septieme partie */
 .forfait{
     display: flex;
     flex-direction: column;
     font-size: 16px;
+    width: 70%;
 }
 .essait{
-    width: 150px;
+    width: 350px;
 }
 .essait1{
     width: 150px;
@@ -844,26 +625,34 @@ body{
 .navbar-list a{
     padding: 0;
 }
-/* *{
-    border: 1px solid red;
-} */
+
 /* premier parti */
 .main1{
     color: #fff;
     background-image: url(budjetphoto/bg-budget.png);
     background-size: cover;
-    /* height: 47rem; */
     padding: 5%;
-    /* font-size: 15px; */
 }
 .deux{
     font-size: 15px;
     margin-left: 40px;
 }
-.presa{
+.presaa{
     width: 50%;
     margin-top: 10px;
 }
+.ppp{
+    display: none;
+}
+.larg{
+    width: 90%;
+} 
+.image-download{
+    width: 60px;
+    margin-left: 6%;    
+}
+}
+
 button{
     margin-left: -10px;
     width: 55%;
@@ -871,7 +660,6 @@ button{
 /* deuxieme parti */
 .div4{
     display: flex;
-    flex-direction: column;
 }
 .droite{
     width: 100%;
@@ -882,7 +670,6 @@ button{
 /* troisieme parti */
 .div5{
     display: flex;
-    flex-direction: column;
 }
 .phone > img{
     width: 100%;
@@ -919,27 +706,25 @@ button{
 /* septieme partie */
 .forfait{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     font-size: 16px;
 }
 .essait{
-    width: 150px;
+    width: 230px;
 }
 .essait1{
-    width: 150px;
+    width: 230px;
     font-size: 12px;
 }
 .essait2{
-    width: 150px;
+    width: 230px;
 }
-}
+
 @media screen  and (min-width:821px) and (max-width:920px) {
 body{
     width: 100%;
 }
-/* *{
-    border: 1px solid red;
-} */
+
 /* premier parti */
 .main1{
     color: #fff;
@@ -949,11 +734,14 @@ body{
     padding: 5%;
     /* font-size: 15px; */
 }
+.ppp{
+    display: none;
+}
 .deux{
     font-size: 15px;
     margin-left: 40px;
 }
-.presa{
+.presaa{
     width: 100%;
     margin-top: 10px;
 }
@@ -984,7 +772,7 @@ button{
     width: 60%;
 }
 /* quatrieme partie */
-.exep{
+.exepp{
     display: flex;
     flex-direction: column;
 }
