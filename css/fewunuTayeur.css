@@ -383,3 +383,152 @@ body {
 .off p{
     text-align: center;
 }
+@media (min-width: 320px) and (max-width: 767px){
+    .bacgroung{
+        height: 400px;
+    }
+    .body{
+        line-height: 30px;
+        transform: translateY(30px);
+        margin: 0 20px;
+    }
+    .body h1{
+        font-size: 1.5em;
+    }
+    .body h2{
+        font-size: 1em;
+        margin-top: 5px;
+    }
+    .body h5{
+        font-size: 1em;
+        width: 80%;
+        margin-top: 10px;
+        line-height: 20px;
+    }
+    .body p{
+        font-size: 13px;
+        width: 95%;
+        margin-top: 10px;
+    }
+    .sceen{
+        transform: translate(0px,50px);
+        margin:0 20px;
+    }
+    .sceen p{
+        width: 200px;
+        padding: 0;
+        font-size: 1em;
+    }
+    .sceen i{
+        width: 30px;
+        height: 30px;
+        transform: translate(-15px,-25px);
+        font-size: 20px;
+        padding: 4px;
+    }
+    .down a{
+        transform: translate(300px,-10px);
+        padding: 3px;
+        width: 30px;
+        margin-top: 0 20px;
+    }
+    .down p{
+        display: none;
+    }
+    .down i{
+        transform: translateX(2px);
+    }
+    .volupt{
+        display: block;
+    }
+    .fonc{
+        height: 730px;
+    }
+    .part1{
+        width: 100%;
+        margin: 0 30px;
+    }
+     .part1 h1{
+        font-size: 1.2em;
+    }
+    .im p{
+        transform: translate(30px,-35px);
+    }
+    .trid{
+        margin-bottom: 20px;
+    }
+    .part2{
+        width: 100%;
+        margin: 0;
+        height: 200px;
+        transform: translateX(-15px);
+    }
+    .play{
+        transform: translate(-70px,-90px);
+    }
+    .flex1 {
+        padding: 0;
+        margin: 0 20px;
+        transform: translateY(20px);
+    }
+    .flex1 a{
+        width: 100%;
+    }
+    .flex1 p{
+        width: 100%;
+    }
+    .avantg{
+        padding: 20px 20px;
+    }
+    .grid{
+        display: block;
+    }
+    .main5 p, .maincoeur p, .mainok p{
+        margin-bottom: 20px;
+    }
+    .guide{
+        display: block;
+    }
+    .sit{
+        margin: 0;
+    }
+    .sit h1{
+        font-size: 18px;
+    }
+    .sit a{
+        margin: 0 70px;
+    }
+    .just{
+        margin: 20px 30px;
+    }
+    .tout{
+        display: block;
+    }
+    .video{
+        margin: 0 20px;
+    }
+    .video iframe{
+        width: 80%;
+        height: 100px;
+        transform: translateX(-70px);
+    }
+    .video p{
+        transform: translate(-90px,0);
+    }
+    .multivideo{
+        width: 100%;
+    }
+    .vid1{
+        margin: 0;
+        position: relative;
+        left: 200px;
+        gap: 30px;
+    }
+    .abonez{
+        display: block;
+    }
+    .un, .deu, .trois, .quatre{
+        margin-bottom: 20px;
+        height: 500px;
+    }
+}
