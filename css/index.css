@@ -2,9 +2,9 @@
 
 body{
     width: 100vw;
+    background-color: #fff;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: #fff;
 }
 
 h1,h2,h3,h4,h5{
@@ -17,9 +17,10 @@ h1,h2,h3,h4,h5{
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
-    height: 100vh;
-    width: 104%;
+    height: 85vh;
+    width: 100%;
     z-index: -1000;
+    overflow: hidden;
 }
 
 #page1 h1 {
@@ -249,7 +250,6 @@ hr{
     margin-bottom: 25px;
     color: white;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 28px;
 }
@@ -326,7 +326,7 @@ hr{
 }
 
 #page5{
-    background-color: #000000;
+    background-color: #f2f2f2;
     margin-bottom: 800px;
     width: 100%;
     height: 50vh;
@@ -335,7 +335,7 @@ hr{
 .titre-page5 {
     width: 100%;
     background-color: #f2f2f2;
-    padding-top: 800px;
+    padding-top: 50px;
     padding-left: 100px;
     font-size: 19px;
     font-weight: 700;
@@ -349,7 +349,7 @@ hr{
     margin: 0;
     background-color: #f2f2f2; 
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 29% 29% 29%;
     grid-template-rows: 300px;
     align-items: center;
     justify-content: center;
@@ -357,7 +357,7 @@ hr{
 }
 
 .box {
-    width: 110%;
+    width: 105%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -409,13 +409,19 @@ hr{
 }
 
 #page6 {
+    margin-top: -790px;
     height: 60vh;
     width: 100%;
 }
 
 #page6 > h1{
    margin-top: 10px;
-   margin-left: 200px;
+   margin-left: 190px;
+   font-size: 19px;
+   font-weight: 700;
+   line-height: 28px;
+   letter-spacing: 0em;
+   text-align: left;
 }
 
 #page6 > h1 > hr{
@@ -503,8 +509,18 @@ hr{
 }
 
 .title-page7{
-    padding: 25px 190px;
+    padding: 25px 150px;
     background-color: #f5f5f5;
+}
+
+.title-page7 > h1 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 28px;
+    width: 100%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
 }
 
 .title-page7 > h1 > hr {
@@ -537,16 +553,18 @@ hr{
     height: 70px;
     width: 130px;
 }
-
+ 
 #page8{
-    padding: 20px 150px;
+    padding: 0px 150px;
     background-color: #f2f2f2;
-}
+    height: 60vh;
+} 
 
 #page8 > .titre-page8{
     font-size: 19px;
     font-weight: 700;
     line-height: 28px;
+    width: 100%;
     letter-spacing: 0em;
     text-align: left;
     margin: 0;
@@ -561,7 +579,7 @@ hr{
 #page8 .container-page8 {
     display: grid;
     grid-template-columns: 55% 45%;
-    gap: 100px;
+    gap: 50px;
 }
 
 #page8 .para-page8 {
@@ -593,7 +611,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: 20px;
 }
 
 .info-page8 > a:nth-child(2):hover{
@@ -621,27 +639,146 @@ hr{
     color: rgba(11, 202, 212, 1);
 }
 
-#page8 .page8-right{
-    padding-bottom: 400px;
-    background-image: url("images/embassadeur.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position:center;
+
+.page8-right img{
+    width: 650px;
 }
 
 .page8-right p{
     padding: 15px 10px;
     padding-bottom: 25px;
     background-color: #fff;
+    font-size: 13px;
+    font-weight: 600;
     border-radius: 9px;
     width: 275px;
     position: relative;
-    top: 320px;
-    right: 25px;
+    top: -80px;
+    right: -10px;
 }
 
-@media screen and (max-width:1114px) {
+@media screen and (max-width:1000px) and (min-width:781px) {
+    *{
+        border: 1px solid red;
+    }
 
+    #page1{
+        margin-top: -105px;
+        background-image: url("../images/bg-herd.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size:162%;
+        height: 110vh;
+        width: 100%;
+        z-index: -1000;
+        overflow: hidden;
+    }
+
+    #page1 h1{
+        margin-left: -110px;
+        font-size: 30px;
+    }
+
+    #page1 p:nth-child(2){
+        margin-left: -110px;
+        font-size: 20px;
+    }
+   
+    #page1 p:nth-child(3){
+        margin-left: -110px;
+        font-size: 15px;
+    }
+
+    #page1 p:nth-child(4){
+        margin-left: -110px;
+        font-size: 15px;
+    }
+
+    .compte {
+        margin-top: -30px;
+        margin-left: -110px;
+    }
+
+    #page2 {
+        margin-top: -90px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page2 .text{
+        padding: 30px; 
+    }
+    
+    #page2 .image{
+        margin: 30px;
+        height: 100vh;
+    }
+
+    #page3 .title {
+        margin-top: -80px;
+    }
+   
+    #page3 .title > h1 {
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    .box-applis{
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .box-applis .img-card{
+       width: 100px;
+       padding-left: 30px;
+    }
+   
+    .box-applis .img-card img{
+       width: 500px;
+    }
+
+    .box-applis .container-page3 {
+        width: 220px;
+    }
+
+    .box-applis .container-page3:nth-child(1){
+        background-color: green;
+        margin-left: 200px;
+    }
+   
+    .box-applis .container-page3:nth-child(2){
+        background-color: pink;
+        margin-left: 80px;
+    }
+  
+    .box-applis .container-page3:nth-child(3){
+        background-color: beige;
+        margin-left: -50px;
+    }
+
+    slider-scroll1 {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .left-slider1, .left-slider2, .left-slider3 {
+        margin-top: 40px;
+        height: 100%;
+        position: relative;
+    }
+
+    .right-slider1{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width:1114px) and (min-width:1000px){
+  
     #page1{
         margin-top: 0px;
         background-image: url("../images/bg-herd.png");
@@ -649,8 +786,9 @@ hr{
         background-position: 80%;
         background-size:100%;
         height: 100vh;
-        width: 104%;
+        width: 100%;
         z-index: -1000;
+        overflow: hidden;
     }
 
     .compte {
@@ -709,8 +847,12 @@ hr{
         justify-content: center;
     }
 
+    #page2 >.image-page2 {
+        height: 74vh;
+    }
+
     #page3 .title h1{
-        margin-top: 100px;
+        margin-top: 200px;
         margin-bottom: 10px;
         margin-left:40px;
         font-size: 19px;
@@ -739,13 +881,245 @@ hr{
         position: relative;
     }
 
+    .slider-scroll1 {
+        padding: 0;
+        margin: 0;
+        padding-left: 60px;
+        height: 100vh;
+        background: linear-gradient(103.99deg, #005368 17.41%, #0BCAD4 88.35%);
+        display: grid;
+        grid-template-columns: 30% 30%;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .para1-slider1 {
+        margin-bottom: 25px;
+        color: white;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    .slider-scroll2 {
+        margin: 0;
+        padding: 0;
+        padding-left: 60px;
+        height: 100vh;
+        background: #005368;;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        align-items: center;
+        justify-content: left;
+        z-index: -1;
+    }
+
+    .slider-scroll3 {
+        padding: 0;
+        margin: 0;
+        padding-left: 60px;
+        height: 100vh;
+        background: #E83538;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .left-slider1 .check-list,
+    .left-slider2 .check-list,
+    .left-slider3 .check-list {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+    }
+
+    .list1 {
+        margin-bottom: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
     
+    .list2 {
+        margin-bottom: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .list3 {
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+
     .titre-page5 {
-        padding-top: 700px;
+        padding-top: 40px;
+    }
+
+    .box {
+        margin-left: -18px;
+    }
+
+    #page5 .titre-box{
+        font-size: 20px;
     }
   
     .box-container {
         grid-template-columns: 25% 25% 25%;
         grid-template-rows: 300px;
+    }
+
+
+    #page6 {
+        margin-top: -740px;
+        height: 140vh;
+        width: 100%;
+    }
+
+    #page6 h1{
+        margin-left: -1px;
+        padding-left: 40px;
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .cards-equipe{
+        margin: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .title-page7{
+        padding: 10px 65px;
+        background-color: #f5f5f5;
+        font-size: 10px;
+    }
+    
+    .box-page7 {
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+     }
+
+     .box-page7 > img:nth-child(1){
+        width: 65px;
+     }
+
+     .box-page7 > img:nth-child(4){
+
+     }
+
+     .box-page7 > img:nth-child(3){
+        width: 50px;
+        height: 50px;
+    }
+    
+    .box-page7 > img:nth-child(2),
+    .box-page7 > img:nth-child(6){
+       width: 70px;
+       height: 50;
+    }
+    
+    .box-page7 > img:nth-child(5){
+        height: 70px;
+        width: 130px;
+    }
+
+    #page8{
+        padding: 0 10px;
+    }
+
+    #page8 > .titre-page8{
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+    }
+
+    .page8-left{
+        width: 85%;
+        margin-left: 3px;
+    }
+
+   .info-page8{
+      margin-top: 40px;
+      margin-bottom: 10px   ;
+   }
+
+    #page8 .para-page8 {
+        padding-left: 30px;
+    }
+
+    #page8 .para1-page8{
+        padding-left: 30px;
+    }  
+    
+    .info-page8 .ensavoir-plus{
+        margin-top: -40px;
+        padding-left: 50px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(11, 202, 212, 1);
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    #page8 .page8-right {
+        margin-left: 12px;
+        width: 90%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .page8-right img{
+      width: 140%;
+      height: 90%;
+    }
+
+    .page8-right p{
+        width: 250px;
+        top: -80px;
+        left: 20px;
+    }
+
+    .title-slide {
+        margin-top: 10px;
+        background-color: #f2f2f2;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .fa-solid, .far, .fas {
+        font-family: "Font Awesome 6 Free";
+        font-size: 15px;
+    }
+
+    #grid {
+        margin-top: -50px;
+    }
+
+    #footer hr {
+        color: rgba(255, 255, 255, 0.696);
+        width: 100%;
     }
 }
