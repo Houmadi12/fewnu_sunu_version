@@ -342,7 +342,7 @@ nav ul li a {
     }
     
     #checkbox{
-        display: flex;
+        display: none;
     }
 
     #whatsapp{
