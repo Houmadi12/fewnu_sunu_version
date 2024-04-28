@@ -2,6 +2,7 @@
 
 body{
     width: 100vw;
+    max-width:100%;
     background-color: #fff;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -347,6 +348,7 @@ hr{
 .box-container {
     padding: 0;
     margin: 0;
+    margin-top: -5px;
     background-color: #f2f2f2; 
     display: grid;
     grid-template-columns: 29% 29% 29%;
@@ -639,9 +641,12 @@ hr{
     color: rgba(11, 202, 212, 1);
 }
 
-
-.page8-right img{
-    width: 650px;
+#page8 .page8-right{
+    padding-bottom: 400px;
+    background-image: url("../images/embassadeur.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center;
 }
 
 .page8-right p{
@@ -653,17 +658,19 @@ hr{
     border-radius: 9px;
     width: 275px;
     position: relative;
-    top: -80px;
-    right: -10px;
+    top: 320px;
+    right: 20px;
 }
 
-@media screen and (max-width:1000px) and (min-width:781px) {
-    *{
-        border: 1px solid red;
-    }
 
+/* @media screen and (max-width:1000px) and (min-width:781px) { */
+@media screen and (max-width:781px) and (min-width:600pxpx) {
+
+ }
+
+@media screen and (max-width:820px) and (min-width:781px) {
     #page1{
-        margin-top: -105px;
+        margin-top: -30px;
         background-image: url("../images/bg-herd.png");
         background-repeat: no-repeat;
         background-position: left;
@@ -709,18 +716,24 @@ hr{
         padding: 30px; 
     }
     
-    #page2 .image{
-        margin: 30px;
-        height: 100vh;
-    }
-
-    #page3 .title {
-        margin-top: -80px;
+    #page2 > .image-page2 {
+        background-color: #f8f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 91.5%;
+        margin-left: 34px;
     }
    
-    #page3 .title > h1 {
-        width: 200px;
-        margin-left: 50px;
+    #page3 .title h1 {
+        margin-top: 100px;
+        margin-bottom: 10px;
+        margin-left: 35px;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
     }
 
     .box-applis{
@@ -744,21 +757,19 @@ hr{
     }
 
     .box-applis .container-page3:nth-child(1){
-        background-color: green;
-        margin-left: 200px;
+        margin-left: 216px;
     }
    
     .box-applis .container-page3:nth-child(2){
-        background-color: pink;
         margin-left: 80px;
     }
   
     .box-applis .container-page3:nth-child(3){
-        background-color: beige;
         margin-left: -50px;
     }
 
-    slider-scroll1 {
+    .slider-scroll1 {
+        padding: 20px;
         height: 100vh;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -772,13 +783,401 @@ hr{
         position: relative;
     }
 
-    .right-slider1{
-        width: 10%;
+    .list1 {
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .right-slider1 > img{
+        margin-left: -100px;
+        width: 150%;
+
+    }
+
+    .slider-scroll2 .right-slider2 img {
+        margin-left: -130px;
+        width: 600px;
+        margin-right: 600px;
+    }
+
+    .list2 {
+        margin-top: -1px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .slider-scroll3 .right-slider3 img {
+        margin-right: 600px;
+        margin-left: -10px;
+        width: 500px;
+    }
+    
+    .list3 {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+
+    #page5 {
+        background-color: #f2f2f2;
+        margin-bottom: 500px;
+        width: 100%;
+        height: 105vh;
+    }
+
+    .box-container {
+        padding-top: 10px;
+        margin: 0;
+        margin-top: -5px;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    .box {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #page6 {
+        margin-top: -460px;
+        width: 100%;
+        height: 140vh;
+    }
+
+    #page6 > h1 {
+        margin-left: 60px;
+    }
+
+    .cards-equipe {
+        margin: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .title-page7 {
+        padding: 25px 60px;
+        background-color: #f5f5f5;
+    }
+    .scrolle-partenaire {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .box-page7 {    
+        gap: 80px;
+    }
+
+    #page8 {
+        padding-top: 20px;
+        padding: 70px 80px;
+        background-color: #f2f2f2;
+        height: 125vh;
+        overflow: hidden;
+    }
+
+    #page8 .container-page8 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 50px;
+    }
+
+    #page8 .page8-right{
+        width: 650px;
+    }
+
+    .info-page8 .ensavoir-plus {
+        text-decoration: none;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(11, 202, 212, 1);
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    #footer {
+        width: 100%;
+        margin-top: -100px;
+        height: auto;
+        background-color: #212529;
+    }
+
+}
+
+@media screen and (max-width:1000px) and (min-width:821px) {
+    #page1{
+        margin-top: -30px;
+        background-image: url("../images/bg-herd.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size:162%;
+        height: 110vh;
+        width: 100%;
+        z-index: -1000;
+        overflow: hidden;
+    }
+
+    #page1 h1{
+        margin-left: -110px;
+        font-size: 30px;
+    }
+
+    #page1 p:nth-child(2){
+        margin-left: -110px;
+        font-size: 20px;
+    }
+   
+    #page1 p:nth-child(3){
+        margin-left: -110px;
+        font-size: 15px;
+    }
+
+    #page1 p:nth-child(4){
+        margin-left: -110px;
+        font-size: 15px;
+    }
+
+    .compte {
+        margin-top: -30px;
+        margin-left: -110px;
+    }
+
+    #page2 {
+        margin-top: -90px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page2 .text{
+        padding: 30px; 
+    }
+    
+    #page2 > .image-page2 {
+        background-color: #f8f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 91.5%;
+        margin-left: 34px;
+    }
+   
+    #page3 .title h1 {
+        margin-top: 100px;
+        margin-bottom: 10px;
+        margin-left: 35px;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .box-applis{
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .box-applis .img-card{
+       width: 100px;
+       padding-left: 30px;
+    }
+   
+    .box-applis .img-card img{
+       width: 500px;
+    }
+
+    .box-applis .container-page3 {
+        width: 220px;
+    }
+
+    .box-applis .container-page3:nth-child(1){
+        margin-left: 216px;
+    }
+   
+    .box-applis .container-page3:nth-child(2){
+        margin-left: 80px;
+    }
+  
+    .box-applis .container-page3:nth-child(3){
+        margin-left: -50px;
+    }
+
+    .slider-scroll1 {
+        padding: 20px;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .left-slider1, .left-slider2, .left-slider3 {
+        margin-top: 40px;
+        height: 100%;
+        position: relative;
+    }
+
+    .list1 {
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .right-slider1 > img{
+        margin-left: -100px;
+        width: 150%;
+
+    }
+
+    .slider-scroll2 .right-slider2 img {
+        margin-left: -130px;
+        width: 600px;
+        margin-right: 600px;
+    }
+
+    .list2 {
+        margin-top: -1px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .slider-scroll3 .right-slider3 img {
+        margin-right: 600px;
+        margin-left: -10px;
+        width: 500px;
+    }
+    
+    .list3 {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+
+    #page5 {
+        background-color: #f2f2f2;
+        margin-bottom: 500px;
+        width: 100%;
+        height: 105vh;
+    }
+
+    .box-container {
+        padding-top: 10px;
+        margin: 0;
+        margin-top: -5px;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    .box {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #page6 {
+        margin-top: -460px;
+        width: 100%;
+        height: 140vh;
+    }
+
+    #page6 > h1 {
+        margin-left: 60px;
+    }
+
+    .cards-equipe {
+        margin: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .title-page7 {
+        padding: 25px 60px;
+        background-color: #f5f5f5;
+    }
+    .scrolle-partenaire {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .box-page7 {    
+        gap: 80px;
+    }
+
+    #page8 {
+        padding-top: 20px;
+        padding: 70px 80px;
+        background-color: #f2f2f2;
+        height: 125vh;
+        overflow: hidden;
+    }
+
+    #page8 .container-page8 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 50px;
+    }
+
+    #page8 .page8-right{
+        width: 650px;
+    }
+
+    .info-page8 .ensavoir-plus {
+        text-decoration: none;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(11, 202, 212, 1);
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    #footer {
+        width: 100%;
+        margin-top: -100px;
+        height: auto;
+        background-color: #212529;
     }
 }
 
-@media screen and (max-width:1114px) and (min-width:1000px){
-  
+/* @media screen and (max-width:1114px) and (min-width:1000px){ */
+@media screen and (min-width:1000px){
+
     #page1{
         margin-top: 0px;
         background-image: url("../images/bg-herd.png");
@@ -874,11 +1273,31 @@ hr{
         gap: 40px;
     }
 
+    .slider-scroll2 {
+        padding: 0;
+        height: 100vh;
+        background: #005368;;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        align-items: center;
+        justify-content: center;
+    }
+
   
-    .left-slider1,.left-slider2,.left-slider3{
+    .left-slider1,
+    .left-slider2,
+    .left-slider3{
+        margin-left: -70px;
         margin-top: 10px;
         height: 100%;
         position: relative;
+    }
+
+    .slider-scroll1 .right-slider1 img,
+    .slider-scroll2 .right-slider2 img,
+    .slider-scroll3 .right-slider3 img{
+        width: 750px;
+        margin-left: -100px;
     }
 
     .slider-scroll1 {
@@ -967,27 +1386,25 @@ hr{
     #page5 .titre-box{
         font-size: 20px;
     }
-  
+
     .box-container {
         grid-template-columns: 25% 25% 25%;
         grid-template-rows: 300px;
     }
 
-
     #page6 {
-        margin-top: -740px;
-        height: 140vh;
+        height: 135vh;
         width: 100%;
     }
 
-    #page6 h1{
-        margin-left: -1px;
-        padding-left: 40px;
-        font-size: 20px;
-        width: 250px;
+    #page6 > h1 {
+        margin-top: -70px;
+        margin-left: 80px;
+        font-size: 19px;
+        font-weight: 700;
     }
 
-    .cards-equipe{
+    .cards-equipe {
         margin: 60px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -996,50 +1413,79 @@ hr{
         gap: 70px;
     }
 
-    .title-page7{
-        padding: 10px 65px;
-        background-color: #f5f5f5;
-        font-size: 10px;
+  
+
+    .title-page7 h1{
+        margin-left: -130px;
+        font-size: 19px;
+        font-weight: 700;
     }
-    
+
     .box-page7 {
-        height: 20vh;
+        height: 15vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 50px;
-     }
+        gap: 110px;
+    }
 
-     .box-page7 > img:nth-child(1){
-        width: 65px;
-     }
+    .box-page7 > img:nth-child(1){
+        height: 70px;
+        width: 80px;
+    }
+  
+    .box-page7 > img:nth-child(3){
+        height: 45px;
+        width: 60px;
+    }
 
-     .box-page7 > img:nth-child(4){
-
-     }
-
-     .box-page7 > img:nth-child(3){
-        width: 50px;
-        height: 50px;
+    .box-page7 > img:nth-child(4){
+        height: 30px;
+        width: 60px;
     }
     
     .box-page7 > img:nth-child(2),
     .box-page7 > img:nth-child(6){
-       width: 70px;
-       height: 50;
+       height: 35px;
+       width: 60px;
     }
     
     .box-page7 > img:nth-child(5){
-        height: 70px;
-        width: 130px;
+        height: 40px;
+        width: 60px;
     }
 
-    #page8{
-        padding: 0 10px;
+    #page8 {
+
+        height: 85vh;
     }
 
-    #page8 > .titre-page8{
+    #page8 .titre-page8 {
+        margin-left: -85px;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .page8-left {
+        margin-left: -70px;
+    }
+
+    .page8-right {
+        border: yellowgreen;
+    }
+
+    .para1-page8 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .para-page8 {
         font-size: 19px;
         font-weight: 700;
         line-height: 28px;
@@ -1048,78 +1494,31 @@ hr{
         margin: 0;
     }
 
-    .page8-left{
-        width: 85%;
-        margin-left: 3px;
-    }
-
-   .info-page8{
-      margin-top: 40px;
-      margin-bottom: 10px   ;
-   }
-
-    #page8 .para-page8 {
-        padding-left: 30px;
-    }
-
-    #page8 .para1-page8{
-        padding-left: 30px;
-    }  
-    
-    .info-page8 .ensavoir-plus{
-        margin-top: -40px;
-        padding-left: 50px;
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 29px;
-        text-transform: uppercase;
-        color: rgba(255, 255, 255, 1);
-        background-color: rgba(11, 202, 212, 1);
-        padding: 12px;
-        border-radius: 15px;
+    .page8-right{
+        margin-bottom: 200px;
+        width: 40.2vw;
+        height: 10vh;
     }
 
     #page8 .page8-right {
-        margin-left: 12px;
-        width: 90%;
-        box-sizing: border-box;
-        overflow: hidden;
+        padding-bottom: 400px;
+        background-image: url(../images/embassadeur.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
-    .page8-right img{
-      width: 140%;
-      height: 90%;
+    .page8-right p {
+        padding: 15px 10px;
+        padding-bottom: 25px;
+        background-color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 9px;
+        width: 275px;
+        position: relative;
+        top: 310px;
+        right: 106px;
     }
 
-    .page8-right p{
-        width: 250px;
-        top: -80px;
-        left: 20px;
-    }
-
-    .title-slide {
-        margin-top: 10px;
-        background-color: #f2f2f2;
-        font-size: 19px;
-        font-weight: 700;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-        padding-left: 50px;
-    }
-
-    .fa-solid, .far, .fas {
-        font-family: "Font Awesome 6 Free";
-        font-size: 15px;
-    }
-
-    #grid {
-        margin-top: -50px;
-    }
-
-    #footer hr {
-        color: rgba(255, 255, 255, 0.696);
-        width: 100%;
-    }
 }
