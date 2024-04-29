@@ -58,7 +58,11 @@
 
   /* Anmation slider index.html */
 
-  .slider-div{
+#page4{
+  overflow: hidden;
+}
+
+.slider-div{
     position: relative;
     width: 500%;
     animation: animate 10s linear infinite;
